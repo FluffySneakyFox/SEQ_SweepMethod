@@ -29,7 +29,6 @@ int main(int argc, char* argv[])
 	double x = 0.0, Len = 300.0, h = 0.001;
 	double a = 1.0, R = (a * tau) / (h * h);
 	double tn, tk, delta;
-	double tmp;
 
 	//Data arrays
 	int N = (int)(Len / h) + 1;
