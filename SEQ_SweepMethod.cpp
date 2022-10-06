@@ -39,7 +39,11 @@ int main(int argc, char* argv[])
 	//Initial state of rod
 	U[0] = psi1(t);
 	x = h;
-	for (int i = 1; i < N - 1; i++) U[i] = f(x);
+	for (int i = 1; i < N - 1; i++)
+	{
+		U[i] = f(x);
+		x += h;
+	}
 	U[N - 1] = psi2(t);
 
 	//Initial values of L & M coefficients
